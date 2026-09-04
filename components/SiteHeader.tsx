@@ -17,7 +17,7 @@ export function SiteHeader() {
         <nav className="site-header__nav" aria-label="Primary navigation">
           <Link href="/">Home</Link>
           <Link href="/blog">Blog</Link>
-          <Link href="/#about">About Us</Link>
+          <a href="https://ocat.framer.website/">Legacy</a>
         </nav>
       </div>
     </header>
