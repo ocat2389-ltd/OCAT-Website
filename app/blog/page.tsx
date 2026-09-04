@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { Route } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { ContinuousCorner } from "@/components/ContinuousCorner";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getAllPosts } from "@/lib/blog";
 
@@ -21,7 +22,7 @@ export default function BlogPage() {
       <section className="blog-page">
         <div className="blog-page__inner">
           <Link className="blog-feature" href={blogHref(featured.slug)}>
-            <div className="blog-feature__media">
+            <ContinuousCorner className="blog-feature__media" radius={24}>
               <Image
                 src={featured.image}
                 alt={featured.imageAlt}
@@ -30,7 +31,7 @@ export default function BlogPage() {
                 priority
                 style={{ objectFit: "cover" }}
               />
-            </div>
+            </ContinuousCorner>
             <div>
               <div className="blog-feature__meta">
                 {formatDate(featured.date)} / {featured.category}
@@ -62,7 +63,7 @@ export default function BlogPage() {
             <div className="article-grid">
               {archivePosts.map((post) => (
                 <Link className="article-card" href={blogHref(post.slug)} key={post.slug}>
-                  <div className="article-card__media">
+                  <ContinuousCorner className="article-card__media" radius={18}>
                     <Image
                       src={post.image}
                       alt={post.imageAlt}
@@ -70,7 +71,7 @@ export default function BlogPage() {
                       sizes="(max-width: 767px) calc(100vw - 40px), 420px"
                       style={{ objectFit: "cover" }}
                     />
-                  </div>
+                  </ContinuousCorner>
                   <div className="article-card__meta">
                     {formatDate(post.date)} / {post.category}
                   </div>

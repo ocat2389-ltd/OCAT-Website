@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ContinuousCorner } from "@/components/ContinuousCorner";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getAllPosts, getPost } from "@/lib/blog";
@@ -53,7 +54,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
             <p className="article-header__description">{post.description}</p>
           </header>
 
-          <figure className="article-hero-media">
+          <ContinuousCorner className="article-hero-media" radius={30}>
             <Image
               src={post.image}
               alt={post.imageAlt}
@@ -62,12 +63,14 @@ export default async function BlogArticlePage({ params }: PageProps) {
               priority
               style={{ objectFit: "cover" }}
             />
-          </figure>
+          </ContinuousCorner>
 
           <MarkdownContent source={post.content} />
-          <Link className="article-backlink" href="/blog">
-            Back to Blog
-          </Link>
+          <div className="article-backlink-row">
+            <Link className="article-backlink" href="/blog">
+              Back to Blog
+            </Link>
+          </div>
         </div>
       </article>
     </main>

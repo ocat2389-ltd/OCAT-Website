@@ -3,7 +3,7 @@ title: "Testing PANGUAN at Ocean Park: A Step Toward Smarter Animal Care"
 date: "2026-09-04"
 category: "Field tests"
 description: "A behind-the-scenes look at PANGUAN's first real-world site test, remote operation, animal-welfare goals, and the next iteration of the robotic platform."
-image: "/blog/panguan-ocean-park/04.jpg"
+image: "/blog/panguan-ocean-park/04.png"
 imageAlt: "PANGUAN being remotely operated inside an Ocean Park penguin-care environment."
 ---
 
@@ -37,7 +37,7 @@ Animal safety is one of the key design considerations, and PANGUAN incorporates 
 
 First and most importantly, PANGUAN addresses the risk of direct collision with penguins. PANGUAN is equipped with a stereo camera that provides distance sensing for penguins and surrounding objects, allowing the robot to stop automatically when an obstacle enters a predefined safety distance. The robot is prohibited from moving forward until the obstacle is cleared, maintaining a controlled operating distance from the penguins.
 
-PANGUAN is also designed to reduce and detect the risk of tipping or falling, which could result in collision with nearby penguins. An IMU system monitors changes in the robot's orientation and detects unexpected tilting, enabling fall detection. When the robot exceeds a predefined tilt threshold, a notification is sent to the user, indicating an impending fall or that the robot may have fallen or encountered an unexpected situation. The wheelbase incorporates a suspension system and a low center of gravity to help reduce the risk of tipping. A soft neoprene/SBR outer skin and silicone head provide a softer exterior in the event of physical contact.
+PANGUAN is also designed to reduce and detect the risk of tipping or falling, which may result in collision with nearby penguins. An IMU system monitors changes in the robot's orientation and detects unexpected tilting, enabling fall detection. When the robot exceeds a predefined tilt threshold, a notification is sent to the user, indicating an impending fall or that the robot may have fallen or encountered an unexpected situation. The wheelbase incorporates a suspension system and a low center of gravity to help reduce the risk of tipping. A soft neoprene/SBR outer skin and silicone head provide a softer exterior in the event of physical contact.
 
 Together, these measures are intended to support cautious and controlled operation of the robot around penguins. The field evaluation also provides an opportunity to identify further improvements needed for safe and animal-appropriate deployment.
 
@@ -62,15 +62,15 @@ To ensure PANGUAN could handle real-world conditions without requiring a human h
 
 The primary milestone of this test was demonstrating the feasibility of remote operation. Instead of placing a person directly inside the habitat, PANGUAN was controlled remotely while streaming live, wide-angle views of the environment.
 
-By removing the human presence from the immediate area, staff can remotely observe animal behaviours, collect visual information, and conduct environmental monitoring. The gathered footage allows close observation of penguins for future research or enrichment.
+By removing the human presence from the immediate area, staff can remotely observe animal behaviours, collect visual information remotely, and conduct environmental monitoring. The gathered footage allows close observation of penguins for future research or enrichment.
 
 ![Remote operation interface during the PANGUAN site test.](/blog/panguan-ocean-park/03.jpg)
 
-![A phone interface controlling PANGUAN inside the enclosure.](/blog/panguan-ocean-park/04.jpg)
+![A phone interface controlling PANGUAN inside the enclosure.](/blog/panguan-ocean-park/04.png)
 
 ## Learning From the First Encounter
 
-The first interaction also gave us an important lesson. When PANGUAN was initially introduced, all three penguins showed cautious behaviour, including avoidance and wing-shivering. Interestingly, this differed from observations during a visit a year prior, when penguins showed curiosity, including pecking and close inspection, towards a similarly sized penguin robot separated by a film of plastic fence. This highlighted that successful deployment in an animal-care environment requires more than reliable robotics. We also need to understand how animals perceive and respond under different environmental conditions.
+**The first interaction also gave us an important lesson.** When PANGUAN was initially introduced, all three penguins showed cautious behaviour, including avoidance and wing-shivering. Interestingly, this differed from our observations during a visit a year prior, when penguins showed curiosity, including pecking and close inspection, towards a similarly sized penguin robot separated by a film of plastic fence. This highlighted that successful deployment in an animal-care environment requires more than reliable robotics. We also need to understand how animals perceive and respond under different environmental conditions.
 
 For us, this is exactly the purpose of field testing: to uncover challenges that cannot be fully understood in the laboratory and use those findings to build a better robot.
 
@@ -78,7 +78,7 @@ For us, this is exactly the purpose of field testing: to uncover challenges that
 
 ## What's Next for PANGUAN?
 
-Our trip to Ocean Park provided invaluable experience that will shape our next iteration. Following the site evaluation, Ocean Park has retained PANGUAN on site, where Ocean Park staff can operate the robot for future evaluation and potential applications.
+Our trip to Ocean Park provided invaluable experience that will shape our next iteration. Following the site evaluation, Ocean Park has retained PANGUAN on-site, where Ocean Park staff can operate the robot for future evaluation and potential applications.
 
 The field test also highlighted areas for improvement. The current camera angle provides limited visibility of shorter Gentoo penguins at a distance, as well as lower areas such as eggs, while the wheelbase performs best on flat, hard surfaces and may struggle on rougher terrain. Therefore, the robot can currently be used in the backup area for enrichment only. Future iterations will improve camera positioning and develop more terrain-adaptive mobility.
 
@@ -87,5 +87,7 @@ Beyond monitoring, we are exploring how a penguin-shaped robotic platform could 
 Looking ahead, we are exploring future AI-assisted monitoring and enhancing streaming quality, which could empower caretakers with additional tools for animal observation and care. This field experience brings us one step closer to understanding how robotic systems could support animal care in the future.
 
 Stay tuned for more updates on our journey.
+
+![PANGUAN after the Ocean Park field evaluation.](/blog/panguan-ocean-park/06.jpg)
 
 ![PANGUAN and the site-test team after the Ocean Park evaluation.](/blog/panguan-ocean-park/07.jpg)

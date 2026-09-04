@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { ContinuousCornerNoScript } from "@/components/ContinuousCorner";
 import { Onboarding } from "@/components/Onboarding";
 import "./globals.css";
 
@@ -32,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body>
+        <ContinuousCornerNoScript />
         <Onboarding />
         {children}
       </body>

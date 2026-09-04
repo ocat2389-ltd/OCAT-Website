@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ContinuousCorner } from "@/components/ContinuousCorner";
 
 type MarkdownContentProps = {
   source: string;
@@ -31,7 +32,9 @@ export function MarkdownContent({ source }: MarkdownContentProps) {
         if (block.type === "image") {
           return (
             <figure key={index}>
-              <Image src={block.src} alt={block.alt} width={1200} height={750} />
+              <ContinuousCorner className="rich-text__media" radius={18}>
+                <Image src={block.src} alt={block.alt} width={1200} height={750} />
+              </ContinuousCorner>
               {block.caption ? <figcaption>{block.caption}</figcaption> : null}
             </figure>
           );
