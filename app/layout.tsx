@@ -1,13 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans, Host_Grotesk } from "next/font/google";
 import { ContinuousCornerNoScript } from "@/components/ContinuousCorner";
 import { Onboarding } from "@/components/Onboarding";
 import "./globals.css";
 
-const inter = Inter({
+const hostGrotesk = Host_Grotesk({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-host-grotesk",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-dm-sans",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${hostGrotesk.variable} ${dmSans.variable}`}>
       <body>
         <ContinuousCornerNoScript />
         <Onboarding />

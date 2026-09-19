@@ -3,6 +3,7 @@ import type { Route } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ContinuousCorner } from "@/components/ContinuousCorner";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getAllPosts } from "@/lib/blog";
 
@@ -27,7 +28,7 @@ export default function BlogPage() {
                 src={featured.image}
                 alt={featured.imageAlt}
                 fill
-                sizes="(max-width: 991px) calc(100vw - 48px), 823px"
+                sizes="(max-width: 991px) calc(100vw - 48px), 680px"
                 priority
                 style={{ objectFit: "cover" }}
               />
@@ -68,7 +69,7 @@ export default function BlogPage() {
                       src={post.image}
                       alt={post.imageAlt}
                       fill
-                      sizes="(max-width: 767px) calc(100vw - 40px), 420px"
+                      sizes="(max-width: 767px) calc(100vw - 48px), 352px"
                       style={{ objectFit: "cover" }}
                     />
                   </ContinuousCorner>
@@ -82,6 +83,7 @@ export default function BlogPage() {
           </section>
         </div>
       </section>
+      <SiteFooter />
     </main>
   );
 }

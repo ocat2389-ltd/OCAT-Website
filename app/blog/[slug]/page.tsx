@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ContinuousCorner } from "@/components/ContinuousCorner";
 import { MarkdownContent } from "@/components/MarkdownContent";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getAllPosts, getPost } from "@/lib/blog";
 
@@ -59,7 +60,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
               src={post.image}
               alt={post.imageAlt}
               fill
-              sizes="(max-width: 767px) calc(100vw - 48px), 1200px"
+              sizes="(max-width: 1127px) calc(100vw - 48px), 1080px"
               priority
               style={{ objectFit: "cover" }}
             />
@@ -73,6 +74,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
           </div>
         </div>
       </article>
+      <SiteFooter />
     </main>
   );
 }

@@ -24,7 +24,7 @@ Use the existing Project Melo reference notes as the measured implementation bas
 
 OCAT brand substitution:
 
-- Typeface: Inter.
+- Typeface: Host Grotesk for headings, DM Sans for body.
 - Primary palette: warm white, black ink, controlled robotic blue, and small luminous yellow-green accents.
 - Assets: OCAT logo, onboarding frames, PANGUAN field-test images.
 
